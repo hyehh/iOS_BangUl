@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BangUl
 //
-//  Created by 박성훈 on 2021/09/04.
+//  Created by Hyeji on 2021/09/04.
 //
 
 import UIKit

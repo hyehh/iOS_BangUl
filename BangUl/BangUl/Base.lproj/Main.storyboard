@@ -133,12 +133,12 @@
         <!--로그인-->
         <scene sceneID="pzh-9I-2xE">
             <objects>
-                <viewController id="yue-a8-sae" sceneMemberID="viewController">
+                <viewController id="yue-a8-sae" customClass="LoginViewController" customModule="BangUl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b7q-KN-e22">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UtF-vB-zmx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="UtF-vB-zmx">
                                 <rect key="frame" x="162" y="148" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -249,7 +249,7 @@
         <!--Home-->
         <scene sceneID="7UC-hW-9sc">
             <objects>
-                <viewController id="BWX-c2-6XN" sceneMemberID="viewController">
+                <viewController id="BWX-c2-6XN" customClass="HomeViewController" customModule="BangUl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0sx-Cn-FVC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,6 +264,13 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="물방울님의 혜택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWF-3k-33j">
                                 <rect key="frame" x="20" y="162" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="카페 연결하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAd-rY-vJB">
+                                <rect key="frame" x="20" y="700" width="374" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -304,6 +311,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-vP-BFC">
                                         <rect key="frame" x="8" y="7" width="398" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnChocie:" destination="BWX-c2-6XN" eventType="touchUpInside" id="ubn-PG-aes"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이용할 매장을 선택해 주세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLp-iQ-3pJ">
                                         <rect key="frame" x="19" y="19" width="235" height="23"/>
@@ -322,13 +332,18 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.076030261809999999" green="0.64375090599999996" blue="0.86260038610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="카페 연결하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAd-rY-vJB">
-                                <rect key="frame" x="20" y="700" width="374" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWm-gf-qwY">
+                                <rect key="frame" x="118" y="611" width="179" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.076030261809999999" green="0.64375090599999996" blue="0.86260038610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <state key="normal" title="연결하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnConnect:" destination="BWX-c2-6XN" eventType="touchUpInside" id="W0w-o0-9kU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wOQ-Nn-sc0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -337,6 +352,14 @@
                         <color key="badgeColor" red="0.3456008136" green="0.68793082240000003" blue="0.89040547609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="GcM-xw-Ms5"/>
+                    <connections>
+                        <outlet property="btnConnect" destination="UWm-gf-qwY" id="U3R-jN-0OO"/>
+                        <outlet property="imgViewLogo" destination="fSp-we-oRt" id="rAu-Th-okd"/>
+                        <outlet property="imgViewTop" destination="LUF-kh-tW1" id="JyL-rr-cpV"/>
+                        <outlet property="lblNickName" destination="uWF-3k-33j" id="UHb-es-02U"/>
+                        <outlet property="lblPay" destination="Uip-aW-MHX" id="UIP-FR-cdl"/>
+                        <outlet property="lblStoreName" destination="jLp-iQ-3pJ" id="J9Z-ki-0d0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="242-jh-CKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
