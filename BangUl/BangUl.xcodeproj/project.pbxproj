@@ -18,6 +18,7 @@
 		85783D5B26ED92190073A79D /* ShareVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85783D5A26ED92190073A79D /* ShareVar.swift */; };
 		85783D5F26ED94F20073A79D /* GeneralUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85783D5E26ED94F20073A79D /* GeneralUserModel.swift */; };
 		85783D6126ED989E0073A79D /* NickNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85783D6026ED989E0073A79D /* NickNameModel.swift */; };
+		85783DA726FAD93D0073A79D /* SignInChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85783DA626FAD93D0073A79D /* SignInChoiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		85783D5A26ED92190073A79D /* ShareVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVar.swift; sourceTree = "<group>"; };
 		85783D5E26ED94F20073A79D /* GeneralUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUserModel.swift; sourceTree = "<group>"; };
 		85783D6026ED989E0073A79D /* NickNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameModel.swift; sourceTree = "<group>"; };
+		85783DA626FAD93D0073A79D /* SignInChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInChoiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		8510A94826E3A171002E790A /* BangUl */ = {
 			isa = PBXGroup;
 			children = (
+				85783DA526FAD91A0073A79D /* SignInVC */,
 				85783D5D26ED94C30073A79D /* Dto */,
 				85783D5C26ED94B50073A79D /* HomeDao */,
 				85783D5926ED91F70073A79D /* ShareVar */,
@@ -120,6 +123,14 @@
 				85783D5E26ED94F20073A79D /* GeneralUserModel.swift */,
 			);
 			path = Dto;
+			sourceTree = "<group>";
+		};
+		85783DA526FAD91A0073A79D /* SignInVC */ = {
+			isa = PBXGroup;
+			children = (
+				85783DA626FAD93D0073A79D /* SignInChoiceViewController.swift */,
+			);
+			path = SignInVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				8510A94E26E3A171002E790A /* ViewController.swift in Sources */,
 				85783D5B26ED92190073A79D /* ShareVar.swift in Sources */,
 				8510A94A26E3A171002E790A /* AppDelegate.swift in Sources */,
+				85783DA726FAD93D0073A79D /* SignInChoiceViewController.swift in Sources */,
 				85783D6126ED989E0073A79D /* NickNameModel.swift in Sources */,
 				8510A94C26E3A171002E790A /* SceneDelegate.swift in Sources */,
 				85783D5F26ED94F20073A79D /* GeneralUserModel.swift in Sources */,
