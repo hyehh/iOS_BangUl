@@ -97,7 +97,7 @@ class HomeViewController: UIViewController {
         formatter.locale = Locale(identifier: "ko")
         formatter.dateFormat = "yyyy-MM-dd EEE a hh:mm"
         currentTime = formatter.string(from: date as Date)
-        print(currentTime)
+        // print(currentTime)
         
         // 시작 시간과 현재 시간 비교 (이건 어떻게 할지 조금 더 고민해보기) (***수정필요***)
         if startTime == currentTime{
